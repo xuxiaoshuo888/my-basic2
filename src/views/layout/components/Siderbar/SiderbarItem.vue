@@ -1,10 +1,10 @@
 <template>
-  <div>登陆页面</div>
+  <div>SidebarItem</div>
 </template>
 
 <script>
   export default {
-    name: 'login'
+    name: 'SidebarItem',
   }
 </script>
 

@@ -45,6 +45,17 @@ module.exports = {
       optionalDependencies: ['test/unit/index.js']
     }],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    //缩进
+    'indent': ['warn', 2],
+    //不强制分号结尾
+    'semi': ['error', 'never'],
+    //对象字面量最后一个结尾不能加逗号
+    'comma-dangle': [2, 'never'],
+    //
+    'quotes': [2, 'single', {
+      'avoidEscape': true,
+      'allowTemplateLiterals': true
+    }]
   }
 }
